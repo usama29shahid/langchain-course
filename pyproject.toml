@@ -11,3 +11,6 @@ dependencies = [
     "langchain-openai>=1.4.1",
     "python-dotenv>=1.2.2",
 ]
+
+[tool.black]
+target-version = ["py312"]
