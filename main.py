@@ -20,7 +20,7 @@ class Source(BaseModel):
 class AgentResponse(BaseModel):
     """Schema for agent response with answer and sources"""
 
-    answer: str = Field(description="Thr agent's answer to the query")
+    answer: str = Field(description="The agent's answer to the query")
     sources: List[Source] = Field(
         default_factory=list, description="List of sources used to generate the answer"
     )    
@@ -50,3 +50,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
