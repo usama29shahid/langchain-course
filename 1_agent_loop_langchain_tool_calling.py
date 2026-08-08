@@ -15,7 +15,6 @@ MODEL = "deepseek/deepseek-v4-pro"
 
 # --- Tools (LangChain @tool decorator) ---
 
-
 @tool
 def get_product_price(product: str) -> float:
     """Look up the price of a product in the catalog."""
